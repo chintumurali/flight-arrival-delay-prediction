@@ -1,0 +1,33 @@
+{
+  "dataset_file": "dataset.csv",
+  "clean_rows": 522269,
+  "feature_columns": [
+    "YEAR",
+    "MONTH",
+    "DAY_OF_MONTH",
+    "DAY_OF_WEEK",
+    "CRS_ARR_TIME",
+    "OP_UNIQUE_CARRIER",
+    "ORIGIN",
+    "DEST",
+    "DISTANCE",
+    "SCHED_DEP_HOUR"
+  ],
+  "target_column": "ARR_DEL15",
+  "split_method": "Chronological split by unique flight date (80/20)",
+  "training_start": "2025-01-01 00:00:00",
+  "training_end": "2025-01-24 00:00:00",
+  "testing_start": "2025-01-25 00:00:00",
+  "testing_end": "2025-01-31 00:00:00",
+  "best_model_by_f1": "Logistic Regression",
+  "metrics": {
+    "Model": "Logistic Regression",
+    "Accuracy": 0.7610117565640112,
+    "Precision": 0.15606827100373505,
+    "Recall": 0.2397588611272516,
+    "F1-score": 0.18906612445946333,
+    "ROC-AUC": 0.5645712437011989,
+    "Training_Time_Minutes": 0.5259029984474182
+  },
+  "note": "Dataset covers January 2025 only."
+}
